@@ -60,7 +60,7 @@ void LlenarCeros(char[], int, int);
 Respuesta getContDisk(int *contador, char *id);
 
 //FUNCION QUE RETORNA UN ID PARA LAS PARTICIONES CREADAS CON LOS ULTIMOS DIGITOS DE MI CARNET COMO BASE
-//82
+//61
 char *getPartitionId(char, int);
 
 //FUNCION QUE RETORNA UN NUMERO DECIMAL CONVERTIDO A FLOAT PARA ESCRIBIR LOS RESPORTES

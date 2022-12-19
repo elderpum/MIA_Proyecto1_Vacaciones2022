@@ -316,10 +316,11 @@ Respuesta getContDisk(int *contador, char *id){
 
 
 //FUNCION QUE RETORNA UN ID PARA LAS PARTICIONES CREADAS CON LOS ULTIMOS DIGITOS DE MI CARNET COMO BASE
-//82
+//61
 char *getPartitionId(char letra, int numero){
-    string str("82");
+    string str("61");
     str+=to_string(numero);
+    
     str+=letra;
     return &str[0];
 }
