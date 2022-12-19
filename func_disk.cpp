@@ -15,7 +15,6 @@ int getSignature(){
 
 //FUNCION QUE DEVUELVE UN MARCADOR BOOLEANO QUE ES TRUE CUANDO SE CREA Y ESCRIBE EL ARCHIVO MBR
 bool CrearArchivoMBR(MasterBootRecord *disk, char path[], char path_comp[]){
-    cout<<"Si esta entrando \n";
     //CREAR UN DIRECTORIO CON EL PATH INGRESADO
     CrearCarpeta(path_comp);
     FILE *arch;
@@ -39,7 +38,6 @@ bool CrearArchivoMBR(MasterBootRecord *disk, char path[], char path_comp[]){
 
 //FUNCION QUE DEVUELVE UNA RESPUESTA DE ERROR O DE SUCCESS AL CREAR UN NUEVO DISCO
 Respuesta CrearDisk(int size, Tipofit fit, Tipounit unit, char path[], char name[]){
-    cout<<"Si esta entrando \n";
     //VERIFICAR EL TAMANO
     long tam = getSize(size, unit);
     //INICIALIZAR EL MASTER BOOT RECORD
@@ -84,7 +82,6 @@ Respuesta CrearDisk(int size, Tipofit fit, Tipounit unit, char path[], char name
 
 //FUNCION PARA DAR LECTURA A UN ARCHIVO BINARIO
 void ReadDisk(char path[]){
-    cout<<"Si esta entrando \n";
     MasterBootRecord data;
     FILE *arch = fopen(path, "rb+");
     if(arch != NULL){
@@ -173,7 +170,6 @@ void ReadDisk(char path[]){
 
 //FUNCION PARA ELIMINAR UN DISCO "RMDISK"
 void RemoveDisk(char path[]){
-    cout<<"Si esta entrando \n";
     //Mensaje de advertencia
     cout<<"ADVERTENCIA!!! \n"
     <<"ESTA SEGURO QUE DESEA ELIMINAR EL DISCO? \n"
@@ -203,7 +199,6 @@ void RemoveDisk(char path[]){
 
 //FUNCION PARA OBTENER LOS DATOS DEL MBR
 MasterBootRecord* getDataMBR(char path[]){
-    cout<<"Si esta entrando \n";
     //INICIALIZAR UNA VARIABLE PARA ALMACENAR LOS DATOS
     MasterBootRecord *data;
     data = (MasterBootRecord*)malloc(sizeof(MasterBootRecord));
@@ -226,7 +221,6 @@ MasterBootRecord* getDataMBR(char path[]){
 
 //FUNCION PARA VERIFICAR SI UN DISCO YA FUE CREADO
 bool DiskExist(char path[]){
-    cout<<"Si esta entrando \n";
     //inicializar un contador para recorrer los discos montados en el sistema
     int diskcont = 0;
     //bandera que indica coincidencia en la busqueda
@@ -248,7 +242,6 @@ bool DiskExist(char path[]){
 
 //FUNCION PARA VERIFICAR QUE LA PARTICION EXTENDIDA HA SIDO CREADA
 bool ExtPartExist(char path[], char name[]){
-    cout<<"Si esta entrando \n";
     //BANDERAS
     int contDisk = 0;
     bool existe = false;
@@ -283,7 +276,6 @@ bool ExtPartExist(char path[], char name[]){
 
 //FUNCION PARA REEMPLAZAR EL ARCHIVO DEL MBR
 void ReemplazarMBR(MasterBootRecord *disco, char path[]){
-    cout<<"Si esta entrando \n";
     //INICIAR PUNTERO AL ARCHIVO
     FILE *arch;
     arch = fopen(path, "rb+");
@@ -302,7 +294,6 @@ void ReemplazarMBR(MasterBootRecord *disco, char path[]){
 
 //FUNCION PARA DEVOLVER LA PRIMERA PARTICION EXTENDIDA
 ExtendedBootRecord* getPrimerEBR(MasterBootRecord *disco, char path[]){
-    cout<<"Si esta entrando \n";
     //particion auxiliar para almacenar los datos del EBR
     Partition *ext = NULL;
     for(int i = 0; i< 4; i++){
@@ -321,7 +312,6 @@ ExtendedBootRecord* getPrimerEBR(MasterBootRecord *disco, char path[]){
 
 //FUNCION PARA OBTENER LOS DATOS DEL EBR
 ExtendedBootRecord* getDataEBR(int inicio, char path[]){
-    cout<<"Si esta entrando \n";
     //INICIAR EL PUNTERO AL ARCHIVO
     FILE *arch = fopen(path, "rb+");
     if(arch == NULL){
@@ -343,7 +333,6 @@ ExtendedBootRecord* getDataEBR(int inicio, char path[]){
 
 //FUNCION PARA OBTENER DATOS DE LA PARTICION EXTENDIDA
 Partition* getExtPart(char name[], MasterBootRecord *disco){
-    cout<<"Si esta entrando \n";
     //recorrer las particiones
     for(int i = 0; i < 4; i++){
         //validar que las particiones sean extendidas y esten activas

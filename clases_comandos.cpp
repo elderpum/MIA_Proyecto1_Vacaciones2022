@@ -2121,7 +2121,6 @@ Comando* getComando(TipoComando commandtype, Parametro *param){
 //Funcion de la clase comando que permite listar elementos del comando
 Comando* ListarComando(Comando *command, bool flag){
     //crear una variable estatica para la persistencia de datos en la lista
-    cout<<"bandera";
     static Comando *ListaComandos;
     if(flag){
         ListaComandos = command;
@@ -2156,7 +2155,6 @@ void Leer_Comando(bool bandera){
     yyrestart(arch);
     //LLAMAR AL ANALIZADOR SINTACTICO
     int respuesta = yyparse();
-    cout<<"SI entra";
     //SI NO SE OBTIENE RESPUESTA, RETORNA UNA LISTA VACIA
     if(respuesta == 0){
         if(ListarComando(NULL, false)!= NULL){
