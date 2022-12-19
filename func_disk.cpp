@@ -104,15 +104,27 @@ void ReadDisk(char path[]){
             switch(data.particiones[i].part_fit){
                 case BF:
                 {
-                    cout<<"FIT: BF"<<endl;
+                    cout<<"FIT: BestFit"<<endl;
+                }break;
+                case BestFit:
+                {
+                    cout<<"FIT: BestFit"<<endl;
                 }break;
                 case FF:
                 {
-                    cout<<"FIT: FF"<<endl;
+                    cout<<"FIT: FirstFit"<<endl;
+                }break;
+                case FirstFit:
+                {
+                    cout<<"FIT: FirstFit"<<endl;
                 }break;
                 case WF:
                 {
-                    cout<<"FIT: WF"<<endl;
+                    cout<<"FIT: WorstFit"<<endl;
+                }break;
+                case WorstFit:
+                {
+                    cout<<"FIT: WorstFit"<<endl;
                 }break;
                 default:
                     cout<<"FIT: ... \n";

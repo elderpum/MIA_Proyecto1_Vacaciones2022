@@ -622,7 +622,7 @@ static const yytype_int16 yyrline[] =
      332,   336,   340,   344,   348,   352,   356,   360,   364,   368,
      372,   376,   380,   384,   388,   392,   396,   400,   404,   408,
      412,   418,   421,   424,   429,   432,   435,   440,   443,   448,
-     451,   456,   459,   462
+     451,   456,   460,   464
 };
 #endif
 
@@ -2200,28 +2200,31 @@ yyreduce:
 #line 456 "sintactico.y"
                                  {
                             (yyval.fit) = FF;
+                            (yyval.fit) = FirstFit;
                         }
-#line 2205 "sintactico.cpp"
+#line 2206 "sintactico.cpp"
     break;
 
   case 82:
-#line 459 "sintactico.y"
+#line 460 "sintactico.y"
                                   {
                             (yyval.fit) = WF;
+                            (yyval.fit) = WorstFit;
                         }
-#line 2213 "sintactico.cpp"
+#line 2215 "sintactico.cpp"
     break;
 
   case 83:
-#line 462 "sintactico.y"
+#line 464 "sintactico.y"
                                  {        
                             (yyval.fit) = BF;
+                            (yyval.fit) = BestFit;
                         }
-#line 2221 "sintactico.cpp"
+#line 2224 "sintactico.cpp"
     break;
 
 
-#line 2225 "sintactico.cpp"
+#line 2228 "sintactico.cpp"
 
       default: break;
     }
@@ -2453,4 +2456,4 @@ yyreturn:
 #endif
   return yyresult;
 }
-#line 467 "sintactico.y"
+#line 470 "sintactico.y"

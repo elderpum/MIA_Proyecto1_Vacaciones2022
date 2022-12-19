@@ -323,7 +323,22 @@ Respuesta getDireccionInicio(MasterBootRecord *disco, Tipofit fit, long tam, int
                 }
             }
             break;
+        case FirstFit:
+        //EL PRIMER AJUSTE CREA LA PARTICION EN EL PRIMER ESPACIO LIBRE CON SUFICIENTE ESPACIO PARA CREARLA
+            for(i = 0; i < contEsp; i++){
+                if(tam <= libres[i]->size){
+                    *inicio = libres[i]->inicio;
+                    break;
+                }
+            }
+            break;
         case WF:
+        //EL PEOR AJUSTE CREA LA PARTICION EN EL ESPACIO LIBRE DE MAYOR TAMANO
+            if(tam <= libres[contEsp -1]->size){
+                *inicio = libres[contEsp -1]->inicio;
+            }
+            break;
+        case WorstFit:
         //EL PEOR AJUSTE CREA LA PARTICION EN EL ESPACIO LIBRE DE MAYOR TAMANO
             if(tam <= libres[contEsp -1]->size){
                 *inicio = libres[contEsp -1]->inicio;

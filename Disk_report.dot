@@ -1,0 +1,37 @@
+digraph G {
+parent [
+shape=plaintext
+label=<
+<table border='1' cellborder='1'>
+<tr>
+<td rowspan="2" bgcolor ="#dd8703" >MBR</td>
+<td rowspan="2" bgcolor = "#3ac9da">LIBRE<br/>
+15.00%</td>
+<td>
+<table border = "1" cellborder="1" bgcolor="#da3a85">
+<tr>
+<td bgcolor="#eeeeee">EBR</td>
+<td bgcolor="#eeeeee">LOGICA <br/>2.50%</td>
+<td bgcolor="#eeeeee">EBR</td>
+<td bgcolor="#eeeeee">LOGICA <br/>2.50%</td>
+<td bgcolor="#eeeeee">EBR</td>
+<td bgcolor="#eeeeee">LOGICA <br/>2.50%</td>
+<td bgcolor="#eeeeee">EBR</td>
+<td bgcolor="#eeeeee">LOGICA <br/>2.50%</td>
+<td bgcolor="#eeeeee">EBR</td>
+<td bgcolor="#eeeeee">LOGICA <br/>2.50%</td>
+<td bgcolor="#eeeeee">EBR</td>
+<td bgcolor="#eeeeee">LOGICA <br/>2.00%</td>
+<td rowspan="2" bgcolor = "#3ac9da">LIBRE<br/>
+0.50%</td>
+</tr>
+</table>
+</td>
+<td rowspan="2" bgcolor ="#50b104" >PRIMARIA <br/>15.00%</td>
+<td rowspan="2" bgcolor ="#50b104" >PRIMARIA <br/>15.98%</td>
+<td rowspan="2" bgcolor = "#3ac9da">LIBRE<br/>
+39.02%</td>
+</tr>
+</table>
+>];
+}

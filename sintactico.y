@@ -455,12 +455,15 @@ sistemas:               TOK_EXT2{
 
 ajustes:                TOK_FIRST{
                             $$ = FF;
+                            $$ = FirstFit;
                         }
                         |TOK_WORST{
                             $$ = WF;
+                            $$ = WorstFit;
                         }
                         |TOK_BEST{        
                             $$ = BF;
+                            $$ = BestFit;
                         }
 ;
 

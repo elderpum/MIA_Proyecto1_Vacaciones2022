@@ -1,7 +1,7 @@
 #ifndef TIPOS_H
 #define TIPOS_H
 
-enum Tipofit {BF='B', FF='F', WF='W', FIT_ERROR};
+enum Tipofit {BF='B', FF='F', WF='W', BestFit = 'b', FirstFit = 'f', WorstFit = 'w', FIT_ERROR};
 enum Tipounit {K='k', M='m', B='b', UNIT_ERROR};
 enum Tipoparticion {P='P', E='E', L='L', TIPO_ERROR};
 enum Tipocapacidad {FAST, FULL, CAPACIDAD_ERROR};
