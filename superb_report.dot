@@ -3,25 +3,25 @@ tbl [
 shape=plaintext
  label=<
 <table border='0' cellborder='1' cellspacing='0'>
-<tr><td colspan="3">Part1</td></tr>
+<tr><td colspan="3">Part2</td></tr>
 <th><td>Nombre</td><td>Valor</td></th>
-<tr><td bgcolor="#bcf7c1">s_filesystem_type</td><td bgcolor="#bcf7c1">0</td></tr>
-<tr><td bgcolor="#b4e0fa">s_inodes_count</td><td bgcolor="#b4e0fa">0</td></tr>
-<tr><td bgcolor="#bcf7c1">s_blocks_count</td><td bgcolor="#bcf7c1">0</td></tr>
-<tr><td bgcolor="#b4e0fa">s_free_inodes_count</td><td bgcolor="#b4e0fa">0</td></tr>
-<tr><td bgcolor="#bcf7c1">s_free_blocks_count</td><td bgcolor="#bcf7c1">0</td></tr>
-<tr><td bgcolor="#b4e0fa">s_mtime</td><td bgcolor="#b4e0fa"></td></tr>
-<tr><td bgcolor="#bcf7c1">s_umtime</td><td bgcolor="#bcf7c1"></td></tr>
+<tr><td bgcolor="#bcf7c1">s_filesystem_type</td><td bgcolor="#bcf7c1">51</td></tr>
+<tr><td bgcolor="#b4e0fa">s_inodes_count</td><td bgcolor="#b4e0fa">296566</td></tr>
+<tr><td bgcolor="#bcf7c1">s_blocks_count</td><td bgcolor="#bcf7c1">889698</td></tr>
+<tr><td bgcolor="#b4e0fa">s_free_inodes_count</td><td bgcolor="#b4e0fa">296564</td></tr>
+<tr><td bgcolor="#bcf7c1">s_free_blocks_count</td><td bgcolor="#bcf7c1">889696</td></tr>
+<tr><td bgcolor="#b4e0fa">s_mtime</td><td bgcolor="#b4e0fa">19/12/22 11:40</td></tr>
+<tr><td bgcolor="#bcf7c1">s_umtime</td><td bgcolor="#bcf7c1">19/12/22 11:40</td></tr>
 <tr><td bgcolor="#b4e0fa">s_mnt_count</td><td bgcolor="#b4e0fa">0</td></tr>
-<tr><td bgcolor="#bcf7c1">s_magic</td><td bgcolor="#bcf7c1">0</td></tr>
-<tr><td bgcolor="#b4e0fa">s_inode_size</td><td bgcolor="#b4e0fa">0</td></tr>
-<tr><td bgcolor="#bcf7c1">s_block_size</td><td bgcolor="#bcf7c1">0</td></tr>
-<tr><td bgcolor="#b4e0fa">s_firts_ino</td><td bgcolor="#b4e0fa">0</td></tr>
-<tr><td bgcolor="#bcf7c1">s_first_blo</td><td bgcolor="#bcf7c1">0</td></tr>
-<tr><td bgcolor="#b4e0fa">s_bm_inode_start</td><td bgcolor="#b4e0fa">0</td></tr>
-<tr><td bgcolor="#bcf7c1">s_bm_block_start</td><td bgcolor="#bcf7c1">0</td></tr>
-<tr><td bgcolor="#b4e0fa">s_inode_start</td><td bgcolor="#b4e0fa">0</td></tr>
-<tr><td bgcolor="#bcf7c1">s_block_start</td><td bgcolor="#bcf7c1">0</td></tr>
+<tr><td bgcolor="#bcf7c1">s_magic</td><td bgcolor="#bcf7c1">61267</td></tr>
+<tr><td bgcolor="#b4e0fa">s_inode_size</td><td bgcolor="#b4e0fa">128</td></tr>
+<tr><td bgcolor="#bcf7c1">s_block_size</td><td bgcolor="#bcf7c1">64</td></tr>
+<tr><td bgcolor="#b4e0fa">s_firts_ino</td><td bgcolor="#b4e0fa">4</td></tr>
+<tr><td bgcolor="#bcf7c1">s_first_blo</td><td bgcolor="#bcf7c1">4</td></tr>
+<tr><td bgcolor="#b4e0fa">s_bm_inode_start</td><td bgcolor="#b4e0fa">47567404</td></tr>
+<tr><td bgcolor="#bcf7c1">s_bm_block_start</td><td bgcolor="#bcf7c1">47863970</td></tr>
+<tr><td bgcolor="#b4e0fa">s_inode_start</td><td bgcolor="#b4e0fa">48753668</td></tr>
+<tr><td bgcolor="#bcf7c1">s_block_start</td><td bgcolor="#bcf7c1">86714116</td></tr>
 </table>
 >];
 

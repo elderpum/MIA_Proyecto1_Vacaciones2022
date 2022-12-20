@@ -1,0 +1,24 @@
+digraph d{
+i_3[ shape=plaintext label=<
+<table>
+<tr>
+<td bgcolor="#f99c87">Permisos</td>
+<td bgcolor="#f99c87">Usuario Propietario</td>
+<td bgcolor="#f99c87">Grupo</td>
+<td bgcolor="#f99c87">Tamaño</td>
+<td bgcolor="#f99c87">Fecha y Hora</td>
+<td bgcolor="#f99c87">Tipo</td>
+<td bgcolor="#f99c87">Nombre</td>
+</tr>
+<tr>
+<td bgcolor="#f99c87">0</td>
+<td bgcolor="#f99c87"></td>
+<td bgcolor="#f99c87"></td>
+<td bgcolor="#f99c87">825178417</td>
+<td bgcolor="#f99c87">F</td>
+<td bgcolor="#f99c87">Archivo</td>
+<td bgcolor="#f99c87">/</td>
+</tr>
+</table>
+>];
+}

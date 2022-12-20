@@ -245,6 +245,7 @@ void C_login::Ejecutar(){
             cout<<"SESION INICIADA EXITOSAMENTE CON EL USUARIO "<<login_activo->user<<endl;
         }else if(check == 1){
             cout<<"EL USUARIO NO EXISTE... \n";
+            cout<<check;
         }else{
             cout<<"LAS CREDENCIALES DE INICIO DE SESION SON INCORRECTAS... \n";
         }
